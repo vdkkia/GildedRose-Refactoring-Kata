@@ -36,4 +36,13 @@ describe("Gilded Rose", function () {
       expect(x.quality).toEqual(expectedValues[i].quality);
     });
   });
+
+  it("should get right values for the new product", () => {
+    gildedRose = new Shop([
+      new Item("Conjured Mana Cake", 3, 6),
+    ]).updateQuality();
+    expect(gildedRose[0].name).toBe("Conjured Mana Cake");
+    expect(gildedRose[0].sellIn).toEqual(2);
+    expect(gildedRose[0].quality).toEqual(7);
+  });
 });
