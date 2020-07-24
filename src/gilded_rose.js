@@ -13,7 +13,8 @@ class Shop {
     for (let item of this.items) {
       if (
         item.name != "Aged Brie" &&
-        item.name != "Backstage passes to a TAFKAL80ETC concert"
+        item.name != "Backstage passes to a TAFKAL80ETC concert" &&
+        item.name != "Conjured Mana Cake"
       ) {
         if (item.quality > 0) {
           if (item.name != "Sulfuras, Hand of Ragnaros") {
